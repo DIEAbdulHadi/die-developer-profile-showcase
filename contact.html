@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Inquiries &bull; DIE Profile</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #0b0f19; color: #fff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; min-height: 100vh; display: flex; flex-direction: column; }
+    .header { padding: 20px 32px; display: flex; justify-content: space-between; align-items: center; background: rgba(11,15,25,0.9); border-bottom: 1px solid rgba(255,255,255,0.1); position: sticky; top: 0; z-index: 100; }
+    .brand { color: #fff; text-decoration: none; font-weight: 700; font-size: 18px; }
+    .nav { display: flex; gap: 24px; }
+    .nav a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 14px; }
+    .nav a:hover, .nav a.active { color: #38bdf8; }
+    .container { max-width: 700px; margin: 0 auto; padding: 48px 24px; flex: 1; }
+    .form-box { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 32px; }
+    .form-group { margin-bottom: 16px; }
+    label { display: block; font-size: 13px; margin-bottom: 6px; }
+    input, textarea { width: 100%; padding: 12px; background: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.15); border-radius: 8px; color: #fff; }
+    button { background: #38bdf8; color: #000; font-weight: 700; border: none; padding: 14px; width: 100%; border-radius: 8px; cursor: pointer; }
+    footer { border-top: 1px solid rgba(255,255,255,0.1); padding: 32px; text-align: center; font-size: 13px; color: rgba(255,255,255,0.5); margin-top: 48px; }
+    footer a { color: #fff; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="brand">DIE PROFILE</a>
+    <nav class="nav">
+      <a href="index.html">Overview</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 style="font-size: 32px; margin-bottom: 16px;">Direct Engineering Contact</h1>
+    <p style="color: rgba(255,255,255,0.7); margin-bottom: 24px;">For consulting, architectural advisory, or enterprise engineering inquiries.</p>
+
+    <div class="form-box">
+      <form onsubmit="event.preventDefault(); document.getElementById('res').style.display='block'; this.reset();">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" required placeholder="Marcus Reed">
+        </div>
+        <div class="form-group">
+          <label>Your Email</label>
+          <input type="email" required placeholder="marcus@enterprise.io">
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea rows="4" required placeholder="Project overview or collaboration details..."></textarea>
+        </div>
+        <button type="submit">Send Message &rarr;</button>
+        <div id="res" style="display: none; margin-top: 16px; color: #38bdf8; text-align: center; font-size: 14px;">✔ Message sent! Contact directly at <a href="mailto:dieabdulhadi@proton.me" style="color: #fff;">dieabdulhadi@proton.me</a>.</div>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div>Development by <a href="https://github.com/DIEAbdulHadi" target="_blank">DIE Abdul Hadi</a> &bull; DIE (D-Design &bull; I-Innovate &bull; E-Execute)</div>
+    <div style="margin-top: 10px; display: flex; justify-content: center; gap: 20px;">
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+</body>
+</html>

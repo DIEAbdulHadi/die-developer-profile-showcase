@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects & Ecosystem &bull; DIE Profile</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #0b0f19; color: #fff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; min-height: 100vh; display: flex; flex-direction: column; }
+    .header { padding: 20px 32px; display: flex; justify-content: space-between; align-items: center; background: rgba(11,15,25,0.9); border-bottom: 1px solid rgba(255,255,255,0.1); position: sticky; top: 0; z-index: 100; }
+    .brand { color: #fff; text-decoration: none; font-weight: 700; font-size: 18px; }
+    .nav { display: flex; gap: 24px; }
+    .nav a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 14px; }
+    .nav a:hover, .nav a.active { color: #38bdf8; }
+    .container { max-width: 1000px; margin: 0 auto; padding: 48px 24px; flex: 1; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    .card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 24px; }
+    .card h3 { font-size: 18px; color: #38bdf8; margin-bottom: 8px; }
+    .card p { font-size: 14px; color: rgba(255,255,255,0.7); line-height: 1.6; }
+    footer { border-top: 1px solid rgba(255,255,255,0.1); padding: 32px; text-align: center; font-size: 13px; color: rgba(255,255,255,0.5); margin-top: 48px; }
+    footer a { color: #fff; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="brand">DIE PROFILE</a>
+    <nav class="nav">
+      <a href="index.html">Overview</a>
+      <a href="about.html">About</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 style="font-size: 36px; margin-bottom: 24px;">Flagship Open Source & Spatial Suites</h1>
+    <div class="grid">
+      <div class="card">
+        <h3>DIE VaultShield</h3>
+        <p>Client-side zero-knowledge password and biometric credentials manager with Argon2id + WebAuthn hardware keys.</p>
+      </div>
+      <div class="card">
+        <h3>DIE Vantage Engine</h3>
+        <p>Unified low-latency spatial data ingestion engine streaming multi-gigabyte LiDAR point clouds in real time.</p>
+      </div>
+      <div class="card">
+        <h3>DIE Terranova</h3>
+        <p>Global biosphere bio-acoustic sensor mesh monitoring primary forest soundscapes across 6 continents.</p>
+      </div>
+      <div class="card">
+        <h3>DIE NovaAI</h3>
+        <p>Edge-accelerated distributed inference gateway with streaming completions and empirical benchmarks.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div>Development by <a href="https://github.com/DIEAbdulHadi" target="_blank">DIE Abdul Hadi</a> &bull; DIE (D-Design &bull; I-Innovate &bull; E-Execute)</div>
+    <div style="margin-top: 10px; display: flex; justify-content: center; gap: 20px;">
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+</body>
+</html>
